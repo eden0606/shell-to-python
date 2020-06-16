@@ -1,2 +1,2 @@
 # shell_to_python
-learning to convert shell scripts to python
+converting shell scripts to python
