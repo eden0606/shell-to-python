@@ -3,4 +3,6 @@
 import sys
 
 shell_param1=sys.argv[1]
-print("This is the shell arg: " + shell_param1)
+shell_param2=sys.argv[2]
+print("This is the shell arg1: " + shell_param1)
+print("This is the shell arg2: " + shell_param2)

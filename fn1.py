@@ -2,9 +2,9 @@
 
 # logger function
 
-def logger(dt, l, h, m, f):
-	print(dt+"|"+1+"|"+h+"|"+m, file=open(f, "a"))
+def logger():
+	print(str(sys.argv[1])+"|"+str(sys.argv[3])+"|"+str(sys.argv[4])+"|"+str(sys.argv[5]), file=open(str(sys.argv[2]), "a"))
 
 
 print("Added to file!")
-logger(am, uber, cool, file_of_names)
+logger()

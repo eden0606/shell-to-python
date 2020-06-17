@@ -1,11 +1,12 @@
 #!/bin/sh
 
 s2p() {
-	local VAR1=$1
-#	local VAR2=$2
-#	local VAR3=$3
-	python python_params.py $VAR1
+	local VAR1=$(date)
+	local VAR2=$1
+#	local VAR3=$2
+	echo $VAR1
+	python python_params.py $VAR1 $VAR2 
 }
 
 echo "Working..."
-s2p ${1}
+s2p ${1} ${2}
