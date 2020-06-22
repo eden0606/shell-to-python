@@ -1,10 +1,11 @@
 #!/usr/bin/env python
+import time
 
-# logger function
+# log function
 
-def logger():
-	print(str(sys.argv[1])+"|"+str(sys.argv[3])+"|"+str(sys.argv[4])+"|"+str(sys.argv[5]), file=open(str(sys.argv[2]), "a"))
+def log(f, l, h, m):
+        dt=time.strftime('%a, %d %b %Y %H:%M:%S %Z(%z)')
+        o = open(f,'a')
+        print(dt+"|"+l+"|"+h+"|"+m, file=o)
 
 
-print("Added to file!")
-logger()
