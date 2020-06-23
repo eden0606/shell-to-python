@@ -13,3 +13,4 @@ echo "timed out"
 #grep -> looks for the specified string of characters in a file
 #-F ":" -> awk default separator is white space, -F allows you to change what separates outputs, so in this case : is put between the outputs
 #{'print $2'} -> prints second field
+#-F \" -> puts \ between fields, i think it's kind of like -F "\" maybe syntatically different/error but still works?
