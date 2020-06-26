@@ -12,5 +12,9 @@ echo "timed out"
 #-k -> This option explicitly allows curl to perform "insecure" SSL connections and transfers. All SSL connections are attempted to be made secure by using the CA certificate bundle installed by default.
 #grep -> looks for the specified string of characters in a file
 #-F ":" -> awk default separator is white space, -F allows you to change what separates outputs, so in this case : is put between the outputs
+#	awk + print $2 -> prints everything after ":"
+#	so 14:46 would print 46
+#	awk + print$1 -> prints everything before ":"
+#	so 14:46 would pring 14
 #{'print $2'} -> prints second field
 #-F \" -> puts \ between fields, i think it's kind of like -F "\" maybe syntatically different/error but still works?

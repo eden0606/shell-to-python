@@ -36,7 +36,7 @@ def alert(to, subject, message_body):
 	else:
 		log("INFO", "script host", "Email notif sent successfully", "n")
 
-alert("hi","hi","hi")
+#alert("hi","hi","hi")
 	
 
   
@@ -68,8 +68,10 @@ alert("hi","hi","hi")
 def logger(f, l, h, m):
 	dt=time.strftime('%a, %d %b %Y %H:%M:%S %Z(%z)')
 	o = open(f,'a')
+	p = open(l,'r')
+	l = p.read()
 	print(dt+"|"+l+"|"+h+"|"+m, file=o)
 
 
-logger("hello","my","name","is")
+logger("hello",'file_of_names',"name","is")
 
