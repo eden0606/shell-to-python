@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import subprocess, os
-import shlex
+import shlex #allows the use of parameters
 
 print("This is my introduction:")
 
