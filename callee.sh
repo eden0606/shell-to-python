@@ -1,9 +1,17 @@
 #!/bin/bash
 
-name() {
-	local NAME=$1
-	echo Hi my name is $NAME
+#add() {
+#	return $(($1+$2))
+#}
+
+#add ${1} ${2}
+
+
+log() {
+	echo "${2}" >> "${1}"
+	echo $1
 }
 
+log ${1} ${2}
 
-name
+
