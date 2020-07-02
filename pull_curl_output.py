@@ -5,12 +5,9 @@ import subprocess
 #result=subprocess.check_output(['./redirect.sh'])
 #print(result)
 
-
-
-
-result=subprocess.Popen(['./redirect.sh'])
+result=subprocess.Popen("./redirect1.sh", cwd="/Users/edenchou/documents/comp_projects/shell_to_python/scripts")
 result.wait()					#waits till shell script is finished executing before moving on
-o=open("output","r")
+o=open("/Users/edenchou/documents/comp_projects/shell_to_python/scripts/output","r")
 print(o.read())
 
 
