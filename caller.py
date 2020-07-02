@@ -14,7 +14,7 @@ add_result=subprocess.call(shlex.split('./add_fn.sh 3 4'))
 print(add_result)
 print("this is the sum: " + str(add_result))
 
-print(".....................")
+print(".......................")
 
 print_file_result=subprocess.check_output(['./print_file.sh', "output", "testing whitespace capabilities"])
 convert=str(print_file_result,'utf-8')
